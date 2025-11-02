@@ -7,5 +7,11 @@ import { Component, signal } from '@angular/core';
   //styleUrl: './app.css'
 })
 export class MyTestComponent2 {
-  protected title = 'by Mr.H controls from ROOT!';
+  data = {
+    title: 'by Mr.H controls from ROOT!'
+  };
+
+  onKeyUp(newTitle: string){
+    this.data.title = newTitle;
+  }
 }
