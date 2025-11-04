@@ -1,11 +1,16 @@
 <main class="main">
   <div class="content">
       <div>
+
         {{data.title}}
         <br/>
         <br/>
 
         <input type="text" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput/>
+        <br/>
+        <br/>
+
+        <input type="button" (click)="emitData()" [value]="data.buttonName" />
 
       </div>
   </div>

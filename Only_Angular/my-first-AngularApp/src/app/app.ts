@@ -12,4 +12,7 @@ import { MyTestComponent2 } from './app_test2';
 })
 export class App {
   protected readonly title = signal('my-first-AngularApp');
-}
+
+  onClickButtonFromChild(data:string){
+    alert(data);
+  };}
